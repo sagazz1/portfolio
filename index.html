@@ -1,46 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My HTML Page</title>
+    <title>Aissa Saga - Développeur IA Portfolio</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
         }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        main {
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
             padding: 20px;
+            background-color: #f5f5f5;
         }
-        footer {
-            background-color: #333;
-            color: #fff;
+
+        header {
             text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            padding: 50px 0;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        section {
+            margin: 40px 0;
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .project {
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-3px);
+        }
+
+        .project h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .tech-stack {
+            background: #f0f0f0;
+            padding: 5px 10px;
+            border-radius: 4px;
+            display: inline-block;
+            font-size: 0.9em;
+        }
+
+        .contact {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .contact a {
+            color: #2c3e50;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to My HTML Page</h1>
+        <h1>Aissa Saga</h1>
+        <div class="subtitle">Développeur IA | Spécialiste en Automatisation | Ingénieur Full-Stack</div>
     </header>
-    <main>
-        <p>This is a sample HTML page created by GitHub Copilot. You can customize it as per your needs.</p>
-    </main>
-    <footer>
-        <p>&copy; 2025 My HTML Page. All rights reserved.</p>
-    </footer>
+
+    <section id="about">
+        <h2>À propos de moi</h2>
+        <p>Passionné par l'intelligence artificielle et l'automatisation, je développe des solutions intelligentes pour optimiser les processus, améliorer l'interactivité et résoudre des problèmes concrets grâce à la technologie.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projets</h2>
+        
+        <div class="project">
+            <h3>Amélioration de 3DVista avec des Fonctionnalités Personnalisées</h3>
+            <div class="tech-stack">Stack technologique : React, GraphQL, Node.js, Matomo</div>
+            <p>J'ai enrichi la plateforme 3DVista en y ajoutant des fonctionnalités interactives inédites. J'ai également intégré Matomo pour fournir une analyse détaillée des interactions des utilisateurs, permettant aux entreprises de mieux comprendre le comportement de leurs visiteurs et d'optimiser leurs expériences virtuelles.</p>
+        </div>
+
+        <div class="project">
+            <h3>Bot de Prise de Rendez-vous AVISO CITAS DGT</h3>
+            <p>J'ai développé un bot d'automatisation capable de gérer la prise de rendez-vous sur la plateforme AVISO CITAS DGT. Cette solution réduit la charge manuelle et optimise le processus de réservation.</p>
+        </div>
+
+        <div class="project">
+            <h3>Plateforme de Mise en Relation de Colocataires</h3>
+            <p>J'ai conçu une plateforme permettant de mettre en relation des personnes recherchant des colocataires compatibles. L'algorithme de matching intelligent facilitait la mise en contact, mais le projet a été abandonné en raison de défis liés au marché.</p>
+        </div>
+
+        <div class="project">
+            <h3>Plugin de Cloaking de Paiement Multi-Compte (En cours)</h3>
+            <div class="tech-stack">Stack technologique : WordPress, JavaScript, PHP</div>
+            <p>Ce plugin WordPress est conçu pour les sites à haut risque et permet un cloaking avancé des paiements multi-comptes. Il sécurise les transactions tout en réduisant les risques de bannissement, garantissant ainsi un processus de paiement fluide et fiable.</p>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Me Contacter</h2>
+        <p>Si vous recherchez des solutions d'automatisation intelligentes ou du développement sur mesure, n'hésitez pas à me contacter.</p>
+        <p><a href="mailto:aissa.saga@gmail.com">📧 aissa.saga@gmail.com</a></p>
+    </section>
 </body>
 </html>
-``` ▋
